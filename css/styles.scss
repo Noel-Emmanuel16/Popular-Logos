@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+// variables for all colors
+$fb-logo-color: #1887f2;
+$google-blue-color: rgb(25, 103, 210);
+$google-red-color: rgb(217, 48, 37);
+$google-yellow-color: rgb(253, 214, 51);
+$google-green-color: rgb(24, 128, 56);
+$twitter-logo-color: #1da1f2;
+$youtube-logo-color: #e72502;
+
+.logo-container {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.5);
+  width: auto;
+  padding: 0.3rem 1rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    margin: 1rem;
+  }
+
+  .fb-logo {
+    width: 60px;
+    height: 60px;
+    background-color: $fb-logo-color;
+    border-radius: 50%;
+    font-family: 'Prompt',sans-serif;
+
+    span {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-weight: 900;
+      color: white;
+      font-size: 4.2rem;
+      text-align: center;
+    }
+  }
+
+  .google-logo {
+    font-family: 'Poppins',sans-serif;
+
+    span {
+      font-size: 3.5rem;
+      font-weight: 900;
+    }
+
+    .google-blue {
+      color: $google-blue-color;
+    }
+
+    .google-red {
+      color: $google-red-color;
+    }
+
+    .google-yellow {
+      color: $google-yellow-color;
+    }
+
+    .google-green {
+      color: $google-green-color;
+    }
+  }
+
+  .youtube-logo {
+    width: 80px;
+    height: 60px;
+    background-color: $youtube-logo-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    .inner-box {
+    //   width: 60%;
+    //   height: 60%;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-right: 0px solid transparent;
+      border-left: 30px solid white;
+    }
+  }
+}
